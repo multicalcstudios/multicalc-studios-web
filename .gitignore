@@ -1,0 +1,14 @@
+# Public source only. Existing local preparation, reports, logs and validation
+# artifacts are intentionally excluded from this repository.
+/*
+!/.gitignore
+!/README.md
+!/docs/
+/docs/*
+!/docs/.nojekyll
+!/docs/index.html
+!/docs/multicontador/
+/docs/multicontador/*
+!/docs/multicontador/privacidad/
+/docs/multicontador/privacidad/*
+!/docs/multicontador/privacidad/index.html
