@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Cuenta billetes y monedas, calcula el total y establece una Meta con MultiContador. Tus conteos se guardan localmente en tu dispositivo." />
-    <meta name="theme-color" content="#f6f8f7" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <meta name="description" content="Cuenta billetes y monedas, controla tu efectivo y trabaja con metas e historial desde una app sencilla y práctica." />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://multicalcstudios.github.io/multicalc-studios-web/multicontador/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/multicalc-studios-web/multicontador/assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/multicalc-studios-web/multicontador/assets/icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/multicalc-studios-web/multicontador/assets/icons/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MultiCalc Studios" />
-    <meta property="og:title" content="MultiContador | Contador de efectivo" />
-    <meta property="og:description" content="Cuenta billetes y monedas, calcula el total y establece una Meta. Tus conteos se guardan localmente en tu dispositivo." />
+    <meta property="og:title" content="MultiContador | MultiCalc Studios" />
+    <meta property="og:description" content="Cuenta billetes y monedas, controla tu efectivo y trabaja con metas e historial desde una app sencilla y práctica." />
     <meta property="og:url" content="https://multicalcstudios.github.io/multicalc-studios-web/multicontador/" />
     <meta property="og:image" content="https://multicalcstudios.github.io/multicalc-studios-web/multicontador/assets/icons/android-chrome-512x512.png" />
     <meta property="og:image:type" content="image/png" />
@@ -22,74 +22,55 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:image" content="https://multicalcstudios.github.io/multicalc-studios-web/multicontador/assets/icons/android-chrome-512x512.png" />
     <meta name="twitter:image:alt" content="Icono de MultiContador: billetes verdes apilados." />
-    <title>MultiContador | Contador de efectivo</title>
-    <style>
-      :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #263732; background: #f6f8f7; -webkit-text-size-adjust: 100%; }
-      * { box-sizing: border-box; }
-      body { margin: 0; font-size: 1.0625rem; line-height: 1.75; }
-      .page { width: min(100%, 58rem); margin-inline: auto; padding: 2.5rem 3rem 2rem; border-top: 4px solid #226750; background: #fff; }
-      a { color: #165f47; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
-      a:focus-visible { outline: 3px solid #226750; outline-offset: 4px; }
-      .studio { font-size: 0.9375rem; }
-      .hero { display: flex; align-items: center; gap: 2rem; margin: 3rem 0 2rem; }
-      .app-icon { display: block; width: 144px; height: 144px; flex: 0 0 auto; object-fit: contain; }
-      h1, h2 { color: #172f25; line-height: 1.2; letter-spacing: -0.035em; }
-      h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 3rem); }
-      .subtitle { margin: 0.5rem 0 0; color: #226750; font-size: 1.25rem; }
-      .lead { max-width: 66ch; margin: 0; font-size: 1.125rem; }
-      section { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #dce5df; }
-      h2 { margin: 0 0 1rem; font-size: 1.375rem; }
-      p { margin: 0 0 1rem; }
-      ul { padding-left: 1.4rem; margin: 0; }
-      li + li { margin-top: 0.5rem; }
-      section > :last-child { margin-bottom: 0; }
-      footer { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid #dce5df; color: #56675f; font-size: 0.875rem; }
-      .skip-link { position: absolute; top: 0.5rem; left: 0.5rem; padding: 0.5rem 0.75rem; background: #fff; transform: translateY(-200%); }
-      .skip-link:focus { transform: translateY(0); }
-      @media (max-width: 600px) {
-        .page { padding: 2rem 1.25rem 1.5rem; }
-        .hero { flex-direction: column; align-items: flex-start; gap: 1.25rem; margin: 2rem 0 1.5rem; }
-        .app-icon { width: 112px; height: 112px; }
-      }
-    </style>
+    <title>MultiContador | MultiCalc Studios</title>
+    <link rel="stylesheet" href="/multicalc-studios-web/assets/css/site.css" />
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
-    <div class="page">
-      <header>
-        <a class="studio" href="../">MultiCalc Studios</a>
-        <div class="hero">
-          <img class="app-icon" src="assets/icons/android-chrome-512x512.png" srcset="assets/icons/android-chrome-192x192.png 192w, assets/icons/android-chrome-512x512.png 512w" sizes="(max-width: 600px) 112px, 144px" width="512" height="512" alt="Icono oficial de MultiContador" decoding="async" fetchpriority="high" />
-          <div>
-            <h1>MultiContador</h1>
-            <p class="subtitle">Contador de efectivo</p>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="/multicalc-studios-web/" aria-label="MultiCalc Studios, inicio">MultiCalc <span>Studios</span></a>
+        <nav class="desktop-nav" aria-label="Principal"><ul class="nav-list"><li><a href="/multicalc-studios-web/">Inicio</a></li><li><a href="/multicalc-studios-web/apps/">Apps</a></li><li><a href="/multicalc-studios-web/multicontador/" aria-current="page">MultiContador</a></li><li><a href="/multicalc-studios-web/acerca-de/">Acerca de</a></li><li><a href="/multicalc-studios-web/soporte/">Soporte</a></li></ul></nav>
+        <details class="mobile-nav">
+          <summary><span class="menu-lines" aria-hidden="true"></span>Menú</summary>
+          <nav aria-label="Principal móvil"><ul class="nav-list"><li><a href="/multicalc-studios-web/">Inicio</a></li><li><a href="/multicalc-studios-web/apps/">Apps</a></li><li><a href="/multicalc-studios-web/multicontador/" aria-current="page">MultiContador</a></li><li><a href="/multicalc-studios-web/acerca-de/">Acerca de</a></li><li><a href="/multicalc-studios-web/soporte/">Soporte</a></li></ul></nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+      <div class="container">
+        <header class="hero product-hero">
+          <div><p class="eyebrow">Android · Productividad y comercio</p><h1>MultiContador</h1><p class="product-subtitle">Contador de efectivo</p><p class="lead">Cuenta billetes y monedas, consulta subtotales y obtén el total de tu efectivo. Organiza tus conteos con Metas e historial, desde una app sencilla y práctica.</p><div class="actions"><span class="availability-label">Próximamente en Google Play</span></div><p class="small-note">Las funciones principales de conteo funcionan de forma local.</p></div>
+          <img class="app-icon" src="/multicalc-studios-web/multicontador/assets/icons/android-chrome-512x512.png" srcset="/multicalc-studios-web/multicontador/assets/icons/android-chrome-192x192.png 192w, /multicalc-studios-web/multicontador/assets/icons/android-chrome-512x512.png 512w" sizes="(max-width: 640px) 112px, 180px" width="512" height="512" alt="Icono oficial de MultiContador" decoding="async" fetchpriority="high" />
+        </header>
+        <section class="section" aria-labelledby="funciones"><div class="section-heading"><div><h2 id="funciones">Del conteo al total.</h2><p>Las funciones que necesitas para llevar el control de tu efectivo.</p></div></div>
+          <div class="feature-grid">
+            <article class="feature"><h3>Billetes y monedas</h3><p>Introduce las cantidades de cada denominación y calcula sus subtotales.</p></article>
+            <article class="feature"><h3>Total general</h3><p>Consulta el importe total del efectivo que has contado.</p></article>
+            <article class="feature"><h3>Denominaciones a tu medida</h3><p>Usa denominaciones personalizadas para adaptar el conteo a lo que necesitas.</p></article>
+            <article class="feature"><h3>Una Meta, tu progreso</h3><p>Establece una Meta y sigue el progreso del conteo respecto al importe que necesitas.</p></article>
+            <article class="feature"><h3>Historial temporal</h3><p>Guarda conteos y Metas localmente y consulta registros recientes con una vigencia de hasta 48 horas.</p></article>
+            <article class="feature"><h3>Sin cuenta</h3><p>Trabaja con almacenamiento local y sin iniciar sesión. El conteo principal funciona offline; los anuncios pueden necesitar conexión.</p></article>
           </div>
+        </section>
+        <section class="section audience" aria-labelledby="pensado-para"><div><h2 id="pensado-para">Pensado para</h2><p>Quienes cuentan efectivo manualmente como parte de su día a día.</p></div><ul class="audience-list"><li>Pulperías</li><li>Pequeños negocios</li><li>Comerciantes</li><li>Cajas</li><li>Conteos personales</li></ul></section>
+        <!-- Activar solo cuando haya capturas reales y autorizadas. Ver README.md. -->
+        <section class="section screenshots" aria-labelledby="capturas" hidden><div class="section-heading"><div><h2 id="capturas">MultiContador en pantalla</h2></div></div><div class="screenshot-grid"></div></section>
+        <section class="section split-section" aria-label="Privacidad y soporte">
+          <div><h2>Tus conteos, en tu dispositivo.</h2><p>No necesitas una cuenta. Los conteos y las Metas se guardan localmente. Conoce también cómo funcionan el historial temporal y los servicios de publicidad.</p><a class="text-link" href="/multicalc-studios-web/multicontador/privacidad/">Política de privacidad <span aria-hidden="true">→</span></a></div>
+          <div><h2>¿Necesitas ayuda?</h2><p>Para consultas o problemas con MultiContador, escríbenos a <a href="mailto:multicalcstudios@gmail.com">multicalcstudios@gmail.com</a>.</p><a class="text-link" href="/multicalc-studios-web/soporte/">Consultar soporte <span aria-hidden="true">→</span></a></div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div><p class="footer-name">MultiCalc Studios</p><a class="footer-email" href="mailto:multicalcstudios@gmail.com">multicalcstudios@gmail.com</a></div>
+          <nav class="footer-nav" aria-label="Enlaces de ayuda"><a href="/multicalc-studios-web/apps/">Apps</a><a href="/multicalc-studios-web/soporte/">Soporte</a><a href="/multicalc-studios-web/multicontador/privacidad/">Privacidad de MultiContador</a></nav>
         </div>
-      </header>
-      <main id="contenido" tabindex="-1">
-        <p class="lead">Cuenta billetes y monedas, consulta subtotales y obtén el total de tu efectivo. MultiContador es una aplicación Android para organizar tus conteos de forma sencilla, con tus datos guardados localmente en el dispositivo.</p>
-        <section aria-labelledby="funciones">
-          <h2 id="funciones">Lo que puedes hacer</h2>
-          <ul>
-            <li>Introducir cantidades de billetes y monedas y calcular sus subtotales.</li>
-            <li>Consultar el total general del efectivo contado.</li>
-            <li>Establecer una Meta y comparar el conteo con el importe que necesitas.</li>
-            <li>Usar denominaciones personalizadas.</li>
-            <li>Guardar un historial local de conteos y Metas con una vigencia de hasta 48 horas.</li>
-          </ul>
-        </section>
-        <section aria-labelledby="privacidad">
-          <h2 id="privacidad">Tus conteos, en tu dispositivo</h2>
-          <p>No necesitas crear una cuenta ni iniciar sesión. Las funciones principales trabajan sin conexión a Internet; los servicios publicitarios pueden necesitarla.</p>
-          <p>Consulta cómo se guardan los datos locales, cómo funciona el historial temporal y qué datos pueden procesar los servicios de publicidad.</p>
-          <p><a href="privacidad/">Política de privacidad de MultiContador</a></p>
-        </section>
-        <section aria-labelledby="contacto">
-          <h2 id="contacto">Contacto</h2>
-          <p><a href="mailto:multicalcstudios@gmail.com">multicalcstudios@gmail.com</a></p>
-        </section>
-      </main>
-      <footer>MultiContador · MultiCalc Studios</footer>
-    </div>
+        <p class="copyright">© 2026 MultiCalc Studios</p>
+      </div>
+    </footer>
   </body>
 </html>
