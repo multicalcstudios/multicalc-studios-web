@@ -9,6 +9,16 @@
 !/docs/index.html
 !/docs/multicontador/
 /docs/multicontador/*
+!/docs/multicontador/index.html
+!/docs/multicontador/assets/
+/docs/multicontador/assets/*
+!/docs/multicontador/assets/icons/
+/docs/multicontador/assets/icons/*
+!/docs/multicontador/assets/icons/android-chrome-192x192.png
+!/docs/multicontador/assets/icons/android-chrome-512x512.png
+!/docs/multicontador/assets/icons/apple-touch-icon.png
+!/docs/multicontador/assets/icons/favicon-16x16.png
+!/docs/multicontador/assets/icons/favicon-32x32.png
 !/docs/multicontador/privacidad/
 /docs/multicontador/privacidad/*
 !/docs/multicontador/privacidad/index.html

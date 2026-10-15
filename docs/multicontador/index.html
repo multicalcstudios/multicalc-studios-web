@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Cuenta billetes y monedas, calcula el total y establece una Meta con MultiContador. Tus conteos se guardan localmente en tu dispositivo." />
+    <meta name="theme-color" content="#f6f8f7" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="canonical" href="https://multicalcstudios.github.io/multicalc-studios-web/multicontador/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MultiCalc Studios" />
+    <meta property="og:title" content="MultiContador | Contador de efectivo" />
+    <meta property="og:description" content="Cuenta billetes y monedas, calcula el total y establece una Meta. Tus conteos se guardan localmente en tu dispositivo." />
+    <meta property="og:url" content="https://multicalcstudios.github.io/multicalc-studios-web/multicontador/" />
+    <meta property="og:image" content="https://multicalcstudios.github.io/multicalc-studios-web/multicontador/assets/icons/android-chrome-512x512.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Icono de MultiContador: billetes verdes apilados." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://multicalcstudios.github.io/multicalc-studios-web/multicontador/assets/icons/android-chrome-512x512.png" />
+    <meta name="twitter:image:alt" content="Icono de MultiContador: billetes verdes apilados." />
+    <title>MultiContador | Contador de efectivo</title>
+    <style>
+      :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #263732; background: #f6f8f7; -webkit-text-size-adjust: 100%; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-size: 1.0625rem; line-height: 1.75; }
+      .page { width: min(100%, 58rem); margin-inline: auto; padding: 2.5rem 3rem 2rem; border-top: 4px solid #226750; background: #fff; }
+      a { color: #165f47; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
+      a:focus-visible { outline: 3px solid #226750; outline-offset: 4px; }
+      .studio { font-size: 0.9375rem; }
+      .hero { display: flex; align-items: center; gap: 2rem; margin: 3rem 0 2rem; }
+      .app-icon { display: block; width: 144px; height: 144px; flex: 0 0 auto; object-fit: contain; }
+      h1, h2 { color: #172f25; line-height: 1.2; letter-spacing: -0.035em; }
+      h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 3rem); }
+      .subtitle { margin: 0.5rem 0 0; color: #226750; font-size: 1.25rem; }
+      .lead { max-width: 66ch; margin: 0; font-size: 1.125rem; }
+      section { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #dce5df; }
+      h2 { margin: 0 0 1rem; font-size: 1.375rem; }
+      p { margin: 0 0 1rem; }
+      ul { padding-left: 1.4rem; margin: 0; }
+      li + li { margin-top: 0.5rem; }
+      section > :last-child { margin-bottom: 0; }
+      footer { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid #dce5df; color: #56675f; font-size: 0.875rem; }
+      .skip-link { position: absolute; top: 0.5rem; left: 0.5rem; padding: 0.5rem 0.75rem; background: #fff; transform: translateY(-200%); }
+      .skip-link:focus { transform: translateY(0); }
+      @media (max-width: 600px) {
+        .page { padding: 2rem 1.25rem 1.5rem; }
+        .hero { flex-direction: column; align-items: flex-start; gap: 1.25rem; margin: 2rem 0 1.5rem; }
+        .app-icon { width: 112px; height: 112px; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="page">
+      <header>
+        <a class="studio" href="../">MultiCalc Studios</a>
+        <div class="hero">
+          <img class="app-icon" src="assets/icons/android-chrome-512x512.png" srcset="assets/icons/android-chrome-192x192.png 192w, assets/icons/android-chrome-512x512.png 512w" sizes="(max-width: 600px) 112px, 144px" width="512" height="512" alt="Icono oficial de MultiContador" decoding="async" fetchpriority="high" />
+          <div>
+            <h1>MultiContador</h1>
+            <p class="subtitle">Contador de efectivo</p>
+          </div>
+        </div>
+      </header>
+      <main id="contenido" tabindex="-1">
+        <p class="lead">Cuenta billetes y monedas, consulta subtotales y obtén el total de tu efectivo. MultiContador es una aplicación Android para organizar tus conteos de forma sencilla, con tus datos guardados localmente en el dispositivo.</p>
+        <section aria-labelledby="funciones">
+          <h2 id="funciones">Lo que puedes hacer</h2>
+          <ul>
+            <li>Introducir cantidades de billetes y monedas y calcular sus subtotales.</li>
+            <li>Consultar el total general del efectivo contado.</li>
+            <li>Establecer una Meta y comparar el conteo con el importe que necesitas.</li>
+            <li>Usar denominaciones personalizadas.</li>
+            <li>Guardar un historial local de conteos y Metas con una vigencia de hasta 48 horas.</li>
+          </ul>
+        </section>
+        <section aria-labelledby="privacidad">
+          <h2 id="privacidad">Tus conteos, en tu dispositivo</h2>
+          <p>No necesitas crear una cuenta ni iniciar sesión. Las funciones principales trabajan sin conexión a Internet; los servicios publicitarios pueden necesitarla.</p>
+          <p>Consulta cómo se guardan los datos locales, cómo funciona el historial temporal y qué datos pueden procesar los servicios de publicidad.</p>
+          <p><a href="privacidad/">Política de privacidad de MultiContador</a></p>
+        </section>
+        <section aria-labelledby="contacto">
+          <h2 id="contacto">Contacto</h2>
+          <p><a href="mailto:multicalcstudios@gmail.com">multicalcstudios@gmail.com</a></p>
+        </section>
+      </main>
+      <footer>MultiContador · MultiCalc Studios</footer>
+    </div>
+  </body>
+</html>
